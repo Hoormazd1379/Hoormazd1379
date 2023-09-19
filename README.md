@@ -10,7 +10,6 @@ You can find me here:
 
 ## GitHub Stats :
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Hoormazd1379&theme=tokyonight&hide_border=true)<br>
-![](https://github-readme-stats.vercel.app/api?username=Hoormazd1379&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true)<br>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Hoormazd1379&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&langs_count=10)
 
 ## Tech stack
