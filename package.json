@@ -1,0 +1,51 @@
+{
+  "name": "Hoormazd1379",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/Hoormazd1379/Hoormazd1379.git",
+  "author": "Hoormazd Pirayeshfar <hoormazd@pirayeshfar.ch>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "DEBUG=router:* nodemon --delay 1 --watch '**/*.js' --ignore public/ app.js",
+    "test": "nyc mocha --exit --timeout 10000",
+    "coverage": "nyc report --reporter=lcov --reporter=text",
+    "ejsc": "node ejs-compile.js"
+  },
+  "nyc": {
+    "include": [
+      "app.js",
+      "routes/**/*.js",
+      "modules/**/*.js",
+      "models/**/*.js"
+    ],
+    "reporter": [
+      "html",
+      "text"
+    ]
+  },
+  "dependencies": {
+    "chai": "^4.3.7",
+    "chart.js": "^4.3.1",
+    "chartjs-chart-financial": "^0.1.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.0",
+    "method-override": "^3.0.0",
+    "mocha": "^10.2.0",
+    "mongodb": "^5.6.0",
+    "mongosh": "^1.9.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "nyc": "^15.1.0",
+    "pg": "^8.11.2",
+    "sinon": "^15.1.0",
+    "socket.io": "^4.7.1",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "should": "^13.2.3",
+    "supertest": "^6.3.0"
+  }
+}

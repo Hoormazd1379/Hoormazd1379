@@ -1,0 +1,22 @@
+<nav class="main-navbar">
+    <div class="main-content">
+        <a class="nav-item <%= locals.page == "Home" ? "active-nav" : "" %>" href="/index.html">
+            Dashboard
+        </a>
+        <a class="nav-item <%= locals.page == "Charts" ? "active-nav" : "" %>" href="/charts">
+            Charts
+        </a>
+        <a class="nav-item <%= locals.page == "Auctions" ? "active-nav" : "" %>" href="/auctions">
+            Auctions
+        </a>
+        <a class="nav-item <%= locals.page == "Nominations" ? "active-nav" : "" %>" href="/nominations">
+            Nominations
+        </a>
+        <a class="nav-item <%= locals.page == "Trades" ? "active-nav" : "" %>" href="/trades">
+            Trades
+        </a>
+        <a class="nav-item <%= locals.page == "Exposure" ? "active-nav" : "" %>" href="/exposure">
+            Exposure
+        </a>
+    </div>
+</nav>

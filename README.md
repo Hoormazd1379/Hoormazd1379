@@ -5,8 +5,8 @@ You can find me here:
 
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/hoormazd.pirayeshfar) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/hoormazd.p) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/hoormazd-p-896876153) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/HoormazdP) 
 
-## Trophies
-![](https://github-profile-trophy.vercel.app/?username=Hoormazd1379&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4)
+<!-- ## Trophies
+![](https://github-profile-trophy.vercel.app/?username=Hoormazd1379&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4) -->
 
 ## GitHub Stats :
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Hoormazd1379&theme=tokyonight&hide_border=true)<br>
