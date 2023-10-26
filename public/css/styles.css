@@ -33,6 +33,7 @@ section {
     padding: 5px;
     font-size: 30px;
     width: 40px;
+    height: 30px;
     text-align: center;
     text-decoration: none;
     margin: 2px 2px;
@@ -178,4 +179,9 @@ section {
   .fa-chess {
     background: #6b9652;
     color: #fff;
+  }
+
+  .cu-revolut {
+    background: #ffffff;
+    color: #000000;
   }
