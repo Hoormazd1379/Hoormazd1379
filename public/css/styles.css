@@ -171,6 +171,11 @@ section {
   }
 
   .fa-envelope {
-    background: #5f007c;
+    background: #7c0036;
+    color: #fff;
+  }
+
+  .fa-chess {
+    background: #6b9652;
     color: #fff;
   }

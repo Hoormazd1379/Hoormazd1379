@@ -12,34 +12,44 @@ document.addEventListener('DOMContentLoaded', function () {
     renderer.domElement.style.zIndex = '-1';
 
     const cubes = [];
-    const cubeCount = 150;
+    const cubeCount = 285;
 
-    for (let i = 0; i < cubeCount; i++) {
-        const boxSize = 0.01 + Math.random() * 0.2;
-        const geometry = new THREE.BoxGeometry(boxSize, boxSize, boxSize);
-        const materials = [];
+for (let i = 0; i < cubeCount; i++) {
+    const boxSize = 0.01 + Math.random() * 0.1;
+    const geometry = new THREE.BoxGeometry(boxSize, boxSize, boxSize);
 
-        for (let j = 0; j < 6; j++) {
-            const randomColor = Math.random() * 0xffffff;
-            materials.push(new THREE.MeshBasicMaterial({ color: randomColor }));
-        }
+    // Generate a random base color for the cube
+    const baseColor = new THREE.Color(Math.random(), Math.random(), Math.random());
 
-        const cube = new THREE.Mesh(geometry, materials);
-        cube.position.set(
-            Math.random() * 10 - 5,
-            Math.random() * 10 - 5,
-            Math.random() * 10 - 5
+    const materials = [];
+
+    for (let j = 0; j < 6; j++) {
+        // Create slightly different shades of the base color for each face
+        const shade = 0.1 + Math.random() * 0.9; // Adjust the range as needed
+        const color = new THREE.Color(
+            baseColor.r * shade,
+            baseColor.g * shade,
+            baseColor.b * shade
         );
-
-        cubes.push(cube);
-        scene.add(cube);
+        materials.push(new THREE.MeshBasicMaterial({ color: color }));
     }
+
+    const cube = new THREE.Mesh(geometry, materials);
+    cube.position.set(
+        Math.random() * 10 - 5,
+        Math.random() * 10 - 5,
+        Math.random() * 10 - 5
+    );
+
+    cubes.push(cube);
+    scene.add(cube);
+}
 
     const animate = () => {
         requestAnimationFrame(animate);
 
         cubes.forEach((cube) => {
-            cube.position.y -= 0.05;
+            cube.position.y -= 0.015;
 
             if (cube.position.y < -5) {
                 cube.position.y = 5;
@@ -67,13 +77,13 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .start();
 
-        setTimeout(changeSkyboxColor, 5000); // Change color every 3 seconds
+        setTimeout(changeSkyboxColor, 2500); // Change color every 3 seconds
     };
 
     const getRandomDarkColor = () => {
         const r = Math.floor(Math.random() * 13);
-        const g = Math.floor(Math.random() * 13);
-        const b = Math.floor(Math.random() * 13);
+        const g = Math.floor(Math.random() * 8);
+        const b = Math.floor(Math.random() * 15);
         return (r << 16) | (g << 8) | b;
     };
 
