@@ -21,7 +21,22 @@ router.get(["/", "index", "/index.html"], (req, res) => {
     res.format({
         'text/html': function () {
             res.render("index", {
-                'title': "Dashboard",
+                'serverstarted': `${serverStartTime.toLocaleString()}, ${timeZone}`,
+            }); // Render the "index" view
+        }
+    });
+});
+
+/**
+GET request handler for the root route ("/"), "index", and "/index.html".
+Renders the "index" view.
+@param {Object} req - The request object.
+@param {Object} res - The response object.
+*/
+router.get(["/qr"], (req, res) => {
+    res.format({
+        'text/html': function () {
+            res.render("qr", {
                 'serverstarted': `${serverStartTime.toLocaleString()}, ${timeZone}`,
             }); // Render the "index" view
         }
