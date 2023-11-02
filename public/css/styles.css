@@ -198,3 +198,7 @@ section {
     font-weight: bolder;
     text-align: center;
   }
+
+  #qr-button {
+    background-color: rgba(55, 55, 55, 0.5);;
+  }
