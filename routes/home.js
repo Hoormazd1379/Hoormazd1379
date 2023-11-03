@@ -42,3 +42,19 @@ router.get(["/qr"], (req, res) => {
         }
     });
 });
+
+/**
+GET request handler for the root route ("/"), "index", and "/index.html".
+Renders the "index" view.
+@param {Object} req - The request object.
+@param {Object} res - The response object.
+*/
+router.get(["/cv"], (req, res) => {
+    res.format({
+        'text/html': function () {
+            res.render("cv", {
+                'serverstarted': `${serverStartTime.toLocaleString()}, ${timeZone}`,
+            }); // Render the "index" view
+        }
+    });
+});

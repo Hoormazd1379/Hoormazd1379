@@ -1,0 +1,15 @@
+/* CVS */
+
+93aec1,9dbdba,f8b042,ec6a52,f3b7ad
+
+/* CVS with # */
+
+#93aec1,#9dbdba,#f8b042,#ec6a52,#f3b7ad
+
+/* Array */
+
+["93aec1", "9dbdba", "f8b042", "ec6a52", "f3b7ad"]
+
+/* Array with # */
+
+["#93aec1", "#9dbdba", "#f8b042", "#ec6a52", "#f3b7ad"]
