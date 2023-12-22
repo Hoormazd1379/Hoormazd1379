@@ -111,6 +111,8 @@ Main components
   background: rgba(51, 60, 66, 0.3333333333);
   border-radius: 2px;
   padding: 1em;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .cd-timeline-content .timeline-content-info {
   background: rgba(43, 52, 58, 0.5333333333);
