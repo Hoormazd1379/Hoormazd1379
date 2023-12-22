@@ -187,7 +187,7 @@ section {
     color: #000000;
   }
 
-  #spoiler-button, #qr-button {
+  .mainpage-button, #spoiler-button, #qr-button {
     background-color: rgba(200, 200, 200, 0.5);
     width: 206px;
     padding: 5px;
