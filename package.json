@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node app.js",
-    "dev": "DEBUG=router:* nodemon --delay 1 --watch '**/*.js' --ignore public/ app.js",
+    "dev": "nodemon --delay 1 --watch '**/*.js' --ignore public/ app.js",
     "test": "nyc mocha --exit --timeout 10000",
     "coverage": "nyc report --reporter=lcov --reporter=text",
     "ejsc": "node ejs-compile.js"
