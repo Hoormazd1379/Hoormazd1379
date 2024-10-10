@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Initialize the gallery after adding images
                 $('#mygallery').justifiedGallery({
                     rowHeight: 180,
-                    lastRow: 'justify',
+                    lastRow: 'nojustify',
                     margins: 3,
                     captions: false,
                     cssAnimation: true
