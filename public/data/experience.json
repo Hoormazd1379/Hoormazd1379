@@ -1,0 +1,55 @@
+[
+    {
+        "organization": "ICC IFZA",
+        "role": "AI Project Manager",
+        "dates": "Jul 2023 - Jul 2024 · 12 mos",
+        "location": "Dubai, United Arab Emirates · Remote",
+        "description": "I supported the company's technology needs and managed AI-focused projects.",
+        "skills": ["Python", "TensorFlow", "C# .Net", "Mongo", "PostgreSQL", "Node.js", "Express.js", "HTML5", "CSS3", "JavaScript", "Project Management"],
+        "logo": "/img/icclogo.png",
+        "logoType": "black"
+      },
+      {
+        "organization": "Marte Design",
+        "role": "Web Developer",
+        "dates": "Nov 2023 - Jan 2024 · 3 mos",
+        "location": "Lugano, Ticino, Switzerland · On-site",
+        "description": "Led the development of a dynamic, user-friendly website for Marte Design, enhancing the company's online presence and client engagement.",
+        "skills": ["Node.js", "Express.js", "HTML5", "CSS3", "JavaScript"],
+        "logo": "/img/martelogo.svg",
+        "logoType": "white"
+      },
+      {
+        "organization": "PMTP SA / Miffipay",
+        "role": "UI/UX Designer",
+        "dates": "Sep 2023 - Jan 2024 · 5 mos",
+        "location": "Lugano, Ticino, Switzerland · Remote",
+        "description": "Worked with software engineering teams on code and design. Created prototypes for product demonstrations for potential clients and investors.",
+        "skills": ["Flutter", "Figma", "Node.js", "Express.js", "HTML5", "CSS3", "JavaScript"],
+        "logo": "/img/miffilogo.png",
+        "logoType": "white"
+      },
+      {
+      "role": "Software Engineer Intern",
+      "organization": "Enet Energy SA",
+      "type": "Internship",
+      "dates": "May 2023 - Jul 2023 · 3 mos",
+      "location": "Lugano, Ticino, Switzerland · On-site",
+      "description": "Developed an AI-powered trading platform and multiple automation tools for commodities trading with a focus on natural gas.",
+      "skills": ["Python", "TensorFlow", "Node.js", "Express.js", "HTML5", "CSS3", "JavaScript"],
+      "logo": "/img/enetlogo.jpeg",
+      "logoType": "black"
+    },
+    {
+      "role": "Deep Learning Intern",
+      "organization": "Little Place Labs",
+      "type": "Internship",
+      "dates": "Jun 2022 - Oct 2022 · 5 mos",
+      "location": "London, England, United Kingdom · Remote",
+      "description": "Created and trained detection and classification TensorFlow models for deployment on satellites and performed research on the efficiency of various deep learning models on edge computing devices.",
+      "skills": ["Python", "TensorFlow"],
+      "logo": "/img/lpllogo.jpeg",
+      "logoType": "black"
+    }
+  ]
+  

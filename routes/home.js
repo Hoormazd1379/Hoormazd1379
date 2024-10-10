@@ -10,6 +10,8 @@ module.exports = router; // Export the router object
 
 const serverStartTime = new Date(); // Capture the start time
 const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+const fs = require('fs');
+const path = require('path');
 
 /**
 GET request handler for the root route ("/"), "index", and "/index.html".
@@ -56,5 +58,18 @@ router.get(["/cv"], (req, res) => {
                 'serverstarted': `${serverStartTime.toLocaleString()}, ${timeZone}`,
             }); // Render the "index" view
         }
+    });
+});
+
+const photoDirectory = path.join(__dirname, '../public', 'photos');
+router.get('/photos', (req, res) => {
+    fs.readdir(photoDirectory, (err, files) => {
+        if (err) {
+            console.error('Error reading photo directory:', err);
+            return res.status(500).json({ error: 'Unable to load photos' });
+        }
+        // Filter files to only include image types (e.g., .jpg, .png)
+        const imageFiles = files.filter(file => /\.(jpg|jpeg|png|gif)$/i.test(file));
+        res.json(imageFiles);
     });
 });

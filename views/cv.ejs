@@ -1,467 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hoormazd.io</title>
-  <script src="https://kit.fontawesome.com/e3b50b909d.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/cv.css">
-  <link rel="stylesheet" href="css/cv-timeline.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/cvstyles.css">
+    <script src="https://kit.fontawesome.com/e3b50b909d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="justifiedGallery.min/justifiedGallery.min.css" />
+    <script src="justifiedGallery.min/jquery.justifiedGallery.min.js"></script>
+    <script src="/js/cvscripts.js"></script>
+
+
+    <script>
+        function showTab(tabName) {
+            var tabs = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+
+            // Fade-in animation
+            document.getElementById(tabName).classList.add('fade-in');
+
+            // if(tabName == 'photography') {
+            //     $('#mygallery').justifiedGallery({
+            //         rowHeight : 70,
+            //         lastRow : 'nojustify',
+            //         margins : 3
+            //     });
+            // }
+        }
+
+        window.onload = function() {
+            // Show the first tab by default
+            showTab('experience');
+        };
+    </script>
 </head>
-
 <body>
-  <div class="timeline-block">
-    <div class="timeline_title-box">
-      <h2>Hoormazd Pirayeshfar</h2>
-      <div class="timeline_top">Professional</div>
-      <div class="timeline_tagline">History & Experience</div>
-      <div class="timeline_title">Timeline</div>
-      <img id="logoimage" src="img/sig.png" height="200">
-      <br>
-      <h3>scroll to continue<br><i class="fa-solid fa-caret-down"></i></h3>
-      <br>
+
+    <header>
+        <div class="banner">
+            <img src="/img/pfb.png" alt="Banner" class="banner-image">
+        </div>
+        <div class="profile-header">
+            <img src="/img/pfp.jpeg" alt="Profile Photo" class="profile-photo">
+            <div class="profile-info">
+                <h1>My Experiences</h1>
+                <p>Explore my professional journey, experiences, projects, and photography.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="tabs-container">
+        <div class="tabs">
+            <button onclick="showTab('experience')">Experience</button>
+            <button onclick="showTab('education')">Education</button>
+            <button onclick="showTab('volunteering')">Volunteering</button>
+            <button onclick="showTab('projects')">Projects</button>
+            <button onclick="showTab('photography')">Photography</button>
+        </div>
     </div>
-  </div>
-  <div class="timeline">
-    <section id="cd-timeline" class="cd-container">
 
-            <!-- ITEM -->
-            <div class="cd-timeline-block">
-              <div class="cd-timeline-img cd-movie">
-              </div> <!-- cd-timeline-img -->
-              <div class="cd-timeline-content education">
-                <p class="active">Active</p>
-                <p class="edutitle">Education</p>
-                <h2>Università della Svizzera Italiana</h2>
-                <div class="explogo-container">
-                  <img src="https://www.usi.ch/sites/all/themes/usiclean/img/bollino-usi.svg" alt="" class="explogo"
-                    style="max-width: 50%;">
+    <div class="content">
+        <div id="education" class="tab-content fade-in">
+            <div class="box">
+                <img src="/img/sig.png" alt="Education Logo" class="box-image">
+                <div class="box-text">
+                    <h3>Master's Degree in Computer Science</h3>
+                    <div class="role-date">
+                        <span class="role-box">Student</span>
+                        <span class="date-box">Sep 2021 - Jul 2023 · 2 years</span>
+                    </div>
+                    <p><strong>University:</strong> Università della Svizzera italiana</p>
+                    <p><strong>Relevant Coursework:</strong> Artificial Intelligence, Machine Learning</p>
+                    <div class="skills">
+                        <span class="skill-box">Python</span>
+                        <span class="skill-box">TensorFlow</span>
+                        <span class="skill-box">Machine Learning</span>
+                    </div>
                 </div>
-                <div class="timeline-content-info">
-                  <span class="timeline-content-info-title">
-                    <i class="fa fa-certificate" aria-hidden="true"></i>
-                    M.Sc. Financial Technology and Computing
-                  </span>
-                  <span class="timeline-content-info-date">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                    Sep 2024 - Present
-                  </span>
+            </div>
+        </div>
+
+        <div id="experience" class="tab-content fade-in" style="display: none;">
+            <div class="box">
+                <img src="/img/sig.png" alt="Company Logo" class="box-image">
+                <div class="box-text">
+                    <h3>Software Engineer</h3>
+                    <div class="role-date">
+                        <span class="role-box">Full-stack Developer</span>
+                        <span class="date-box">Jan 2022 - Present · 1 yr 9 mos</span>
+                    </div>
+                    <p><strong>Company:</strong> Tech Solutions Inc.</p>
+                    <div class="skills">
+                        <span class="skill-box">Node.js</span>
+                        <span class="skill-box">React</span>
+                        <span class="skill-box">JavaScript</span>
+                    </div>
                 </div>
-                <p>In progress, active student.</p>
-                <span class="cd-date">SEPTEMBER 2024 - PRESENT</span>
-              </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
+            </div>
+        </div>
 
-      <!-- ITEM -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content volunteering">
-          <p class="active">Active</p>
-          <p class="voltitle">Volunteering </p>
-          <h2>The Rook Club</h2>
-          <div class="explogo-container">
-            <img src="img/rookclublogo.svg" alt="" class="explogo">
-          </div>
-          <div class="timeline-content-info">
-            <span class="timeline-content-info-title">
-              <i class="fa fa-certificate" aria-hidden="true"></i>
-              Co-Founder & President
-            </span>
-            <span class="timeline-content-info-date">
-              <i class="fa fa-calendar-o" aria-hidden="true"></i>
-              Dec 2023 - Present
-            </span>
-          </div>
-          <p>President and co-founder of "The Rook Club", a student association recognized by Università della Svizzera
-            Italiana, that specializes in organizing various chess-related events at City, Cantonal, and National levels
-            in Switzerland.</p>
-          <ul class="content-skills">
-            <li>Project Management</li>
-            <li>Team Management</li>
-            <li>Leadership</li>
-          </ul>
-          <span class="cd-date">DECEMBER 2023 - PRESENT</span>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-
-            <!-- ITEM -->
-            <div class="cd-timeline-block">
-              <div class="cd-timeline-img cd-movie">
-              </div> <!-- cd-timeline-img -->
-              <div class="cd-timeline-content education">
-                <p class="edutitle">Education</p>
-                <h2>Università della Svizzera Italiana</h2>
-                <div class="explogo-container">
-                  <img src="https://www.usi.ch/sites/all/themes/usiclean/img/bollino-usi.svg" alt="" class="explogo"
-                    style="max-width: 50%;">
+        <div id="volunteering" class="tab-content fade-in" style="display: none;">
+            <div class="box">
+                <img src="/img/sig.png" alt="Volunteering Logo" class="box-image">
+                <div class="box-text">
+                    <h3>The Rook Club</h3>
+                    <div class="role-date">
+                        <span class="role-box">Co-Founder & President</span>
+                        <span class="date-box">Dec 2023 - Present</span>
+                    </div>
+                    <div class="skills">
+                        <span class="skill-box">Project Management</span>
+                        <span class="skill-box">Team Management</span>
+                        <span class="skill-box">Leadership</span>
+                    </div>
                 </div>
-                <div class="timeline-content-info">
-                  <span class="timeline-content-info-title">
-                    <i class="fa fa-certificate" aria-hidden="true"></i>
-                    B.Sc. Computer Science
-                  </span>
-                  <span class="timeline-content-info-date">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                    Sep 2019 - Sep 2024 · 5 yrs
-                  </span>
+            </div>
+        </div>
+
+        <div id="projects" class="tab-content fade-in" style="display: none;">
+            <div class="box">
+                <img src="/img/sig.png" alt="Project Logo" class="box-image">
+                <div class="box-text">
+                    <h3>Rock-Paper-Scissors AI</h3>
+                    <div class="role-date">
+                        <span class="role-box">Project Developer</span>
+                        <span class="date-box">Jan 2023 - Jul 2023 · 6 mos</span>
+                    </div>
+                    <div class="skills">
+                        <span class="skill-box">Python</span>
+                        <span class="skill-box">Machine Learning</span>
+                        <span class="skill-box">Algorithm Design</span>
+                    </div>
                 </div>
-                <p>Graduated with a Bachelor's Degree in Computer Science.</p>
-                <span class="cd-date">SEPTEMBER 2019 - SEPTEMBER 2024</span>
-              </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
+            </div>
+        </div>
 
-      <!-- ITEM -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content work">
-          <p class="active">Active</p>
-          <h2>ICC IFZA</h2>
-          <div class="explogo-container">
-            <img src="img/icclogo.png" alt="" class="explogo">
-          </div>
-          <div class="timeline-content-info">
-            <span class="timeline-content-info-title">
-              <i class="fa fa-certificate" aria-hidden="true"></i>
-              AI Project Manager
-            </span>
-            <span class="timeline-content-info-date">
-              <i class="fa fa-calendar-o" aria-hidden="true"></i>
-              Jul 2023 - Jul 2024 · 12 mos
-            </span>
-          </div>
-          <p>I support the company's technology needs and drive innovation in our daily trading operations by providing
-            AI solutions.</p>
-          <ul class="content-skills">
-            <li>Python</li>
-            <li>TensorFlow</li>
-            <li>C# .Net</li>
-            <li>Mongo</li>
-            <li>PostgreSQL</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-          </ul>
-          <span class="cd-date">JULY 2023 - JULY 2024</span>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-
-      <!-- ITEM -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content work">
-          <h2>Marte Design</h2>
-          <div class="explogo-container">
-            <img src="img/martelogo.svg" alt="" class="explogo" style="max-width: 40%;">
-          </div>
-          <div class="timeline-content-info">
-            <span class="timeline-content-info-title">
-              <i class="fa fa-certificate" aria-hidden="true"></i>
-              Web Developer
-            </span>
-            <span class="timeline-content-info-date">
-              <i class="fa fa-calendar-o" aria-hidden="true"></i>
-              Nov 2023 - Jan 2024 · 3 mos
-            </span>
-          </div>
-          <p>Led the development of a dynamic, user-friendly website for Marte Design, enhancing the company's online presence and client engagement.</p>
-          <ul class="content-skills">
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-          </ul>
-          <span class="cd-date">NOVEMBER 2023 - JANUARY 2024</span>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-
-      <!-- ITEM -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content work">
-          <h2>PMTP SA / Miffipay</h2>
-          <div class="explogo-container">
-            <img src="img/miffilogo.png" alt="" class="explogo">
-          </div>
-          <div class="timeline-content-info">
-            <span class="timeline-content-info-title">
-              <i class="fa fa-certificate" aria-hidden="true"></i>
-              UI/UX Designer
-            </span>
-            <span class="timeline-content-info-date">
-              <i class="fa fa-calendar-o" aria-hidden="true"></i>
-              Sep 2023 - Jan 2024 · 5 mos
-            </span>
-          </div>
-          <p>Working with software engineering teams on code and design. Creating prototypes for product demonstrations
-            for potential clients and investors.</p>
-          <ul class="content-skills">
-            <li>Flutter</li>
-            <li>Figma</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-          </ul>
-          <span class="cd-date">SEPTEMBER 2023 - JANUARY 2024</span>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-
-      <!-- ITEM -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content work">
-          <h2>Enet Energy SA</h2>
-          <div class="explogo-container">
-            <img src="img/enetlogo.svg" alt="" class="explogo">
-          </div>
-          <div class="timeline-content-info">
-            <span class="timeline-content-info-title">
-              <i class="fa fa-certificate" aria-hidden="true"></i>
-              Software Engineering Intern
-            </span>
-            <span class="timeline-content-info-date">
-              <i class="fa fa-calendar-o" aria-hidden="true"></i>
-              May 2023 - Jul 2023 · 3 mos
-            </span>
-          </div>
-          <p>Developed an AI-powered trading platform and multiple automation tools for commodities trading with a focus
-            on natural gas.</p>
-          <ul class="content-skills">
-            <li>Python</li>
-            <li>TensorFlow</li>
-          </ul>
-          <span class="cd-date">MAY 2023 - JULY 2023</span>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-
-      <!-- ITEM -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content work">
-          <h2>Little Place Labs</h2>
-          <div class="explogo-container">
-            <img src="img/lpllogo.webp" alt="" class="explogo" style="max-width: 30%;">
-          </div>
-          <div class="timeline-content-info">
-            <span class="timeline-content-info-title">
-              <i class="fa fa-certificate" aria-hidden="true"></i>
-              Deep Learning Intern
-            </span>
-            <span class="timeline-content-info-date">
-              <i class="fa fa-calendar-o" aria-hidden="true"></i>
-              Jun 2022 - Oct 2022 · 5 mos
-            </span>
-          </div>
-          <p>Created and trained 'detection' and 'classification' TensorFlow models for deployment on satellites and
-            performed research on the efficiency of various deep learning models on edge computing devices.</p>
-          <ul class="content-skills">
-            <li>Python</li>
-            <li>TensorFlow</li>
-          </ul>
-          <span class="cd-date">JUNE 2022 - OCTOBER 2022</span>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-
-      <!-- ITEM -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content volunteering">
-          <p class="voltitle">Volunteering </p>
-          <h2>ESN Switzerland (Erasmus Student Network)</h2>
-          <div class="explogo-container">
-            <img src="img/esnlogo.png" alt="" class="explogo">
-          </div>
-          <div class="timeline-content-info">
-            <span class="timeline-content-info-title">
-              <i class="fa fa-certificate" aria-hidden="true"></i>
-              ESN Lugano Active Member
-            </span>
-            <span class="timeline-content-info-date">
-              <i class="fa fa-calendar-o" aria-hidden="true"></i>
-              Sep 2021 - Feb 2022 · 6 mos
-            </span>
-          </div>
-          <p>An active member of the Erasmus Student Network in Lugano, helping manage and organize activities and trips
-            for visiting exchange students.</p>
-          <ul class="content-skills">
-            <li>Project Management</li>
-            <li>Event Management</li>
-          </ul>
-          <span class="cd-date">SEPTEMBER 2021 - FEBRUARY 2022</span>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-
-      <!-- ITEM -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content volunteering">
-          <p class="voltitle">Volunteering </p>
-          <h2>Institut auf dem Rosenberg</h2>
-          <div class="explogo-container">
-            <img src="img/rblogo.svg" alt="" class="explogo" style="max-width: 50%;">
-          </div>
-          <div class="timeline-content-info">
-            <span class="timeline-content-info-title">
-              <i class="fa fa-certificate" aria-hidden="true"></i>
-              Junior Robotics Teacher
-            </span>
-            <span class="timeline-content-info-date">
-              <i class="fa fa-calendar-o" aria-hidden="true"></i>
-              Sep 2018 - Mar 2019 · 7 mos
-            </span>
-          </div>
-          <p>I taught the basics of robotics and programming to middle school students at Institut auf dem Rosenberg.
-          </p>
-          <ul class="content-skills">
-            <li>Teaching</li>
-            <li>Arduino</li>
-            <li>Sketch</li>
-            <li>RaspberryPi</li>
-            <li>Python</li>
-            <li>Blender</li>
-            <li>3D Printing</li>
-          </ul>
-          <span class="cd-date">SEPTEMBER 2018 - MARCH 2019</span>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-
-      <!-- ITEM -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content">
-          <p>Project</p>
-          <h2>Virtual Classroom</h2>
-          <p>Developed a gamified virtual science classroom to aid and enhance remote learning for middle schoolers with
-            basic physics/chemistry labs.</p>
-          <ul class="content-skills">
-            <li>Unity</li>
-            <li>Mongo</li>
-            <li>C#</li>
-            <li>Python</li>
-          </ul>
-          <span class="cd-date">AUGUST 2018</span>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-
-      <!-- ITEM -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content">
-          <p>Project</p>
-          <h2>Platformer Mobile Game</h2>
-          <p>Developed a 2D platformer game with basic movement functions for the Android operating system.</p>
-          <ul class="content-skills">
-            <li>Unity</li>
-            <li>Android Studio</li>
-            <li>C#</li>
-          </ul>
-          <span class="cd-date">JUNE 2018</span>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-
-      <!-- ITEM -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content volunteering">
-          <p class="voltitle">Volunteering </p>
-          <h2>Appenzeller Jugendorchester</h2>
-          <div class="explogo-container">
-            <img src="img/musikschulelogo.png" alt="" class="explogo" style="max-width: 40%;">
-          </div>
-          <div class="timeline-content-info">
-            <span class="timeline-content-info-title">
-              <i class="fa fa-certificate" aria-hidden="true"></i>
-              Violist
-            </span>
-            <span class="timeline-content-info-date">
-              <i class="fa fa-calendar-o" aria-hidden="true"></i>
-              Feb 2018 - Mar 2018 · 2 mos
-            </span>
-          </div>
-          <p>Collaboration with the Appenzeller Jugendorchester as a violist for a number of performances.</p>
-          <ul class="content-skills">
-            <li>Viola</li>
-            <li>Public Performances</li>
-          </ul>
-          <span class="cd-date">FEBRUARY 2018 - MARCH 2018</span>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-
-      <!-- ITEM -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content education">
-          <p class="edutitle">Education</p>
-          <h2>Institut auf dem Rosenberg</h2>
-          <div class="explogo-container">
-            <img src="img/rblogo.svg" alt="" class="explogo" style="max-width: 50%;">
-          </div>
-          <div class="timeline-content-info">
-            <span class="timeline-content-info-title">
-              <i class="fa fa-certificate" aria-hidden="true"></i>
-              High School
-            </span>
-            <span class="timeline-content-info-date">
-              <i class="fa fa-calendar-o" aria-hidden="true"></i>
-              Aug 2017 - Jul 2019
-            </span>
-          </div>
-          <p>International A-Levels, and GCSEs</p>
-          <ul class="content-skills">
-            <li>A-Level Mathematics</li>
-            <li>A-Level Physics</li>
-            <li>A-Level Economics</li>
-            <li>AS-Level German</li>
-            <li>GCSE Chemistry</li>
-            <li>GCSE English literature</li>
-          </ul>
-          <span class="cd-date">AUGUST 2017 - JULY 2019</span>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-
-      <!-- ITEM -->
-      <div class="cd-timeline-block">
-        <div class="cd-timeline-img cd-movie">
-        </div> <!-- cd-timeline-img -->
-        <div class="cd-timeline-content">
-          <p>Project</p>
-          <h2>Multiplayer FPS Game</h2>
-          <p>Developed a multiplayer first-person shooter game with procedural map generation, using functions based on
-            Perlin-noise.</p>
-          <ul class="content-skills">
-            <li>Unity</li>
-            <li>C#</li>
-            <li>Blender</li>
-          </ul>
-          <span class="cd-date">SEPTEMBER 2016</span>
-        </div> <!-- cd-timeline-content -->
-      </div> <!-- cd-timeline-block -->
-
-
-    </section> <!-- cd-timeline -->
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/20.0.0/tween.umd.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.157.0/three.js"></script>
-  <script src="js/background.js"></script>
-
-</body>
-
+        <!-- Photography Tab -->
+        <div id="photography" class="tab-content fade-in" style="display: none;">
+            <div class="photo-gallery" id="mygallery">
+                <!-- Add more photos here -->
+            </div>
+        </div>
+    </div>
+    </body>
 </html>
