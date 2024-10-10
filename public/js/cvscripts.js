@@ -34,6 +34,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 h3.textContent = entry.organization;
             }
 
+            const aspan = document.createElement('span');
+            if (entry.url) {
+                aspan.innerHTML = `(<a class="link" href="${entry.url}" target="_blank">${entry.url}</a>)`;
+            }
+
             const roleDate = document.createElement('div');
             roleDate.classList.add('role-date');
 
@@ -78,7 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
             boxText.appendChild(roleDate);
             boxText.appendChild(degree);
             boxText.appendChild(location);
-            boxText.appendChild(description); // Append the description to the box
+            boxText.appendChild(description);
+            boxText.appendChild(aspan);
             boxText.appendChild(skills);
             box.appendChild(boxImage);
             box.appendChild(boxText);

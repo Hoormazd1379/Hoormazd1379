@@ -1,36 +1,41 @@
-[
-    {
-      "degree": "Master of Science - MS, Financial Technology and Computing (Fintech)",
-      "role": "Active Student",
-      "dates": "Sep 2024 - Nov 2026",
-      "organization": "USI Università della Svizzera italiana",
-      "description": "In progress, active student.",
-      "logo": "https://www.usi.ch/sites/all/themes/usiclean/img/bollino-usi.svg",
-      "logoType": "black"
+[{
+        "degree": "Master of Science - MS, Financial Technology and Computing (Fintech)",
+        "role": "Active Student",
+        "dates": "Sep 2024 - Nov 2026",
+        "location": "Lugano, Ticino, Switzerland",
+        "organization": "USI Università della Svizzera italiana",
+        "description": "In progress, active student.",
+        "logo": "https://www.usi.ch/sites/all/themes/usiclean/img/bollino-usi.svg",
+        "logoType": "black",
+        "url": "https://www.usi.ch/en"
     },
     {
-      "degree": "Bachelor of Science - BS, Computer Science",
-      "role": "Student",
-      "dates": "2019 - 2023",
-      "organization": "USI Università della Svizzera italiana",
-      "logo": "https://www.usi.ch/sites/all/themes/usiclean/img/bollino-usi.svg",
-      "logoType": "black"
+        "degree": "Bachelor of Science - BS, Computer Science",
+        "role": "Student",
+        "dates": "2019 - 2023",
+        "location": "Lugano, Ticino, Switzerland",
+        "organization": "USI Università della Svizzera italiana",
+        "logo": "https://www.usi.ch/sites/all/themes/usiclean/img/bollino-usi.svg",
+        "logoType": "black",
+        "url": "https://www.usi.ch/en"
     },
     {
-      "degree": "International A-Levels, Mathematics, Physics and Economics",
-      "role": "Student",
-      "dates": "2017 - 2019",
-      "organization": "Institut auf dem Rosenberg",
-      "logo": "/img/rblogo.png",
-      "logoType": "black"
+        "degree": "International A-Levels, Mathematics, Physics and Economics",
+        "role": "Student",
+        "dates": "2017 - 2019",
+        "location": "St. Gallen, St. Gallen, Switzerland",
+        "organization": "Institut auf dem Rosenberg",
+        "logo": "/img/rblogo.png",
+        "logoType": "black",
+        "url": "https://www.instrosenberg.ch/"
     },
     {
-      "degree": "High School Diploma, Mathematics",
-      "role": "Student",
-      "dates": "Sep 2014 - Jun 2017",
-      "organization": "Shahid Soltani 3",
-      "logo": "/img/Sampad.svg",
-      "logoType": "black"
+        "degree": "High School Diploma, Mathematics",
+        "role": "Student",
+        "dates": "Sep 2014 - Jun 2017",
+        "location": "Karaj, Alborz, Iran",
+        "organization": "Shahid Soltani 3",
+        "logo": "/img/Sampad.svg",
+        "logoType": "black"
     }
-  ]
-  
+]

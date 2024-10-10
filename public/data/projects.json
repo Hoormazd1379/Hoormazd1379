@@ -2,10 +2,11 @@
         "name": "The Cube Collective",
         "dates": "July 2023",
         "role": "Web Developer & Mod Developer",
-        "description": "Co-Founded The Cube Collective, a Minecraft community server, and developed mods and plugins along with a website for the server.",
+        "description": "Co-Founded The Cube Collective, a Minecraft community, and developed Minecraft mods and plugins along with a website for the community.",
         "skills": ["Java", "Kotlin", "HTML5", "CSS3", "JavaScript", "Node.js", "Express.js", "RestAPIs"],
         "logo": "/img/server-icon.png",
-        "logoType": "white"
+        "logoType": "white",
+        "url": "https://thecubecollective.net/"
     },
     {
         "name": "Virtual Classroom",

@@ -27,6 +27,8 @@ $role-date-bg: #4d4d4d;
 $skill-bg: #3a3a3a;
 $skill-hover-bg: #5a5a5a;
 $skill-color: #cccccc;
+$link-color: #9ecffb;
+$link-hover-color: #f0f0f0;
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -122,6 +124,10 @@ button {
     margin: 0 auto;
 }
 
+p.tab-content {
+    display: block;
+}
+
 .box {
     background-color: $box-background;
     border: 1px solid $box-border;
@@ -164,6 +170,17 @@ button {
         color: white;
         display: flex;
         align-items: center;
+    }
+}
+
+.link {
+    color: $link-color;
+    font-size: 14px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: underline;
     }
 }
 

@@ -1,30 +1,31 @@
-[
-    {
-      "role": "President and Co-Founder",
-      "organization": "The Rook Club",
-      "dates": "Dec 2023 - Present",
-      "description": "President and co-founder of 'The Rook Club', a student association recognized by Università della Svizzera italiana, that specializes in organizing various chess-related events at City, Cantonal, and National levels in Switzerland.",
-      "skills": ["Project Management", "Team Management", "Leadership"],
-      "logo": "/img/rookclublogo.svg",
-      "logoType": "white"
+[{
+        "role": "President and Co-Founder",
+        "organization": "The Rook Club",
+        "dates": "Dec 2023 - Present",
+        "description": "President and co-founder of 'The Rook Club', a student association recognized by Università della Svizzera italiana, that specializes in organizing various chess-related events at City, Cantonal, and National levels in Switzerland.",
+        "skills": ["Project Management", "Team Management", "Leadership"],
+        "logo": "/img/rookclublogo.svg",
+        "logoType": "white"
     },
     {
-      "role": "ESN Lugano Active Member",
-      "organization": "ESN Switzerland (Erasmus Student Network)",
-      "dates": "Sep 2021 - Feb 2022 · 6 mos",
-      "description": "An active member of the Erasmus Student Network in Lugano, helping manage and organize activities and trips for visiting exchange students.",
-      "skills": ["Project Management", "Event Management"],
-      "logo": "/img/esnlogo.png",
-      "logoType": "black"
+        "role": "ESN Lugano Active Member",
+        "organization": "ESN Switzerland (Erasmus Student Network)",
+        "dates": "Sep 2021 - Feb 2022 · 6 mos",
+        "description": "An active member of the Erasmus Student Network in Lugano, helping manage and organize activities and trips for visiting exchange students.",
+        "skills": ["Project Management", "Event Management"],
+        "logo": "/img/esnlogo.png",
+        "logoType": "black",
+        "url": "https://esn.ch/"
     },
     {
-      "role": "Volunteer Junior Robotics Teacher",
-      "organization": "Institut auf dem Rosenberg",
-      "dates": "Sep 2018 - Mar 2019 · 7 mos",
-      "description": "I taught the basics of robotics and programming to middle school students at Institut auf dem Rosenberg.",
-      "skills": ["Teaching", "Arduino", "Sketch", "RaspberryPi", "Python", "Blender", "3D Printing"],
-      "logo": "/img/rblogo.png",
-      "logoType": "black"
+        "role": "Volunteer Junior Robotics Teacher",
+        "organization": "Institut auf dem Rosenberg",
+        "dates": "Sep 2018 - Mar 2019 · 7 mos",
+        "description": "I taught the basics of robotics and programming to middle school students at Institut auf dem Rosenberg.",
+        "skills": ["Teaching", "Arduino", "Sketch", "RaspberryPi", "Python", "Blender", "3D Printing"],
+        "logo": "/img/rblogo.png",
+        "logoType": "black",
+        "url": "https://www.instrosenberg.ch/"
     },
     {
         "organization": "Appenzeller Jugendorchester",
@@ -33,7 +34,7 @@
         "description": "Collaboration with the Appenzeller Jugendorchester as a violist for a number of performances.",
         "skills": ["Viola", "Public Performances"],
         "logo": "/img/musikschulelogo.png",
-        "logoType": "black"
-      }
+        "logoType": "black",
+        "url": "https://www.msam.ch/"
+    }
 ]
-  
