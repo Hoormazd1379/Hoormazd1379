@@ -102,22 +102,28 @@ document.addEventListener('DOMContentLoaded', function () {
     function loadPhotography() {
         const photoGallery = document.querySelector('.photo-gallery');
         photoGallery.innerHTML = ''; // Clear existing content
+    
         fetch('/photos') // This assumes server-side logic to serve the photo directory
             .then(response => response.json())
             .then(photos => {
                 // photos.sort().reverse();
+    
+                // Lazy loading each image incrementally
                 photos.forEach(photo => {
                     const divElement = document.createElement('div');
-                    // divElement.classList.add('photo');
+                    divElement.classList.add('photo');
+                    
                     const imgElement = document.createElement('img');
                     imgElement.src = `/photos/${photo}`;
                     imgElement.alt = `Photo ${photo}`;
-                    // imgElement.classList.add('gallery-photo');
+                    imgElement.classList.add('gallery-photo');
+                    
+                    // Append the imgElement to the div
                     divElement.appendChild(imgElement);
                     photoGallery.appendChild(divElement);
                 });
-                return photoGallery;
-            }).then(x => {
+    
+                // Initialize the gallery after adding images
                 $('#mygallery').justifiedGallery({
                     rowHeight: 180,
                     lastRow: 'justify',
@@ -130,4 +136,26 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     loadPhotography();
+
+    const images = document.querySelectorAll('.gallery-photo');
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1
+    };
+
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const image = entry.target;
+                image.src = image.dataset.src; // Load the image
+                image.classList.add("loaded");
+                observer.unobserve(image); // Stop observing once loaded
+            }
+        });
+    }, observerOptions);
+
+    images.forEach(image => {
+        imageObserver.observe(image);
+    });
 });
