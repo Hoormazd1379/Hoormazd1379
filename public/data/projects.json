@@ -12,15 +12,19 @@
         "name": "Virtual Classroom",
         "dates": "August 2018",
         "role": "Game Designer and Developer",
-        "description": "Developed a gamified virtual science classroom to aid and enhance remote learning for middle schoolers with basic physics/chemistry labs.",
-        "skills": ["Unity", "Mongo", "C#", "Python"]
+        "description": "Co-Developed a gamified virtual science classroom to aid and enhance remote learning for middle schoolers with basic physics/chemistry labs.",
+        "skills": ["Unity", "Mongo", "C#", "Python"],
+        "logo": "/img/vacademy.png",
+        "logoType": "black"
     },
     {
         "name": "Platformer Mobile Game",
         "dates": "June 2018",
         "role": "Game Designer and Developer",
         "description": "Developed a 2D platformer game with basic movement functions for the Android operating system.",
-        "skills": ["Unity", "Android Studio", "C#"]
+        "skills": ["Unity", "Android Studio", "C#"],
+        "logo": "/img/boxlogo.png",
+        "logoType": "white"
     },
     {
         "name": "Multiplayer FPS Game",
