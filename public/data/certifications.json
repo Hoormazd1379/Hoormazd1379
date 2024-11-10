@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Google Cybersecurity Professional Certificate",
+        "dates": "Ongoing",
+        "role": "Google",
+        "description": "On going Professional Certificate in Cybersecurity offered by Google on Coursera.",
+        "skills": ["Cybersecurity","Risk Assessment","Networking", "Encryption","Risk Management", "Python", "SQL", "Assets, Threats, Vulnerabilities", "Incident Response", "Security Operations", "Security Architecture", "Security Engineering", "Security Assessment"],
+        "logo": "/img/google.png",
+        "logoType": "black",
+        "url": "https://www.coursera.org/professional-certificates/google-cybersecurity"
+    },
+    {
+        "name": "Play It Safe: Manage Security Risks",
+        "dates": "10 November 2024",
+        "role": "Google",
+        "description": "Successfully completed all course material in the Play It Safe: Manage Security Risks Course offered by Google on Coursera. Grade Achieved: 95.25%",
+        "skills": ["Information Security (INFOSEC)","NIST Risk Management Framework (RMF)","Security Audits","NIST Cybersecurity Framework (CSF)","Incident Response Playbooks"],
+        "logo": "/img/google.png",
+        "logoType": "black",
+        "url": "https://www.coursera.org/account/accomplishments/records/C2HKILP6SGMS"
+    },
+    {
+        "name": "Foundations of Cybersecurity",
+        "dates": "18 October 2024",
+        "role": "Google",
+        "description": "Successfully completed all course material in the Foundations of Cybersecurity Course offered by Google on Coursera. Grade Achieved: 98.15%",
+        "skills": ["Cybersecurity","Risk Assessment","Networking", "Encryption","Information Security (INFOSEC)","Ethics in cybersecurity","NIST Cybersecurity Framework (CSF)","Historical Attacks"],
+        "logo": "/img/google.png",
+        "logoType": "black",
+        "url": "https://www.coursera.org/account/accomplishments/records/W73IXPW67PEV"
+    },
+    {
+        "name": "Language Models in Python: Generative Text (AI) Course",
+        "dates": "13 September 2021",
+        "role": "Codecademy",
+        "description": "Successfully completed all course material in the Language Models in Python: Generative Text Course.",
+        "skills": ["LLM", "Python", "AI", "NLP"],
+        "logo": "/img/Codecademy_Logo.png",
+        "logoType": "black",
+        "url": "https://www.codecademy.com/profiles/hoormazdPirayeshfar6352223584/certificates/93274c15b5d1b933de1c61f63461b69f"
+    },
+    {
+        "name": "Introduction to Cybersecurity Course",
+        "dates": "13 September 2021",
+        "role": "Codecademy",
+        "description": "Successfully completed all course material in the Introduction to Cybersecurity Course.",
+        "skills": ["Cybersecurity", "Networking", "Encryption"],
+        "logo": "/img/Codecademy_Logo.png",
+        "logoType": "black",
+        "url": "https://www.codecademy.com/profiles/hoormazdPirayeshfar6352223584/certificates/de0bd5c89521d004ce449a86b0ad3319"
+    },
+    {
+        "name": "Python(Basic) Certification",
+        "dates": "10 September 2021",
+        "role": "HackerRank",
+        "description": "Passed the Python(Basic) certification test on HackerRank.",
+        "skills": ["Python", "Algorithms"],
+        "logo": "/img/HackerRank_logo.png",
+        "logoType": "black",
+        "url": "https://www.hackerrank.com/certificates/cdacb30c9093"
+    }
+]

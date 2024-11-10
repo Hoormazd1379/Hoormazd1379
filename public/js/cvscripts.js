@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const h3 = document.createElement('h3');
             if (entry.organization) {
                 h3.textContent = entry.organization;
+            } else if (entry.name) {
+                h3.textContent = entry.name;
             }
 
             const aspan = document.createElement('span');
@@ -96,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loadTabData('education', 'education');
     loadTabData('experience', 'experience');
     loadTabData('volunteering', 'volunteering');
+    loadTabData('certifications', 'certifications');
     loadTabData('projects', 'projects');
 
     // Load photography dynamically
