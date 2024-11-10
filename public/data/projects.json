@@ -1,4 +1,14 @@
-[{
+[
+    {
+        "name": "Bachelor's Thesis",
+        "dates": "June 2024",
+        "role": "Author",
+        "description": "Bachelor's Thesis: Problems surrounding EVM random number generation and creating a Fair NFT Distribution System",
+        "skills": ["Blockchain", "Ethereum", "Solidity", "NFTs", "Smart Contracts"],
+        "logo": "https://www.usi.ch/sites/all/themes/usiclean/img/bollino-usi.svg",
+        "logoType": "black"
+    },
+    {
         "name": "The Cube Collective",
         "dates": "July 2023",
         "role": "Java Developer",
