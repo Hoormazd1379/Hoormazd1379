@@ -11,6 +11,16 @@
     },
     {
         "name": "Play It Safe: Manage Security Risks",
+        "dates": "12 November 2024",
+        "role": "Google",
+        "description": "Successfully completed all course material in the Connect and Protect: Networks and Network Security Course offered by Google on Coursera. Grade Achieved: 93.46%",
+        "skills": ["Security Hardening","Network Security","Transmission Control Protocol / Internet Protocol (TCP/IP)","Network Architecture","Cloud Networks"],
+        "logo": "/img/google.png",
+        "logoType": "black",
+        "url": "https://www.coursera.org/account/accomplishments/records/8XIFEOZ84GAT"
+    },
+    {
+        "name": "Play It Safe: Manage Security Risks",
         "dates": "10 November 2024",
         "role": "Google",
         "description": "Successfully completed all course material in the Play It Safe: Manage Security Risks Course offered by Google on Coursera. Grade Achieved: 95.25%",
