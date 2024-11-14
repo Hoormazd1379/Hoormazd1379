@@ -10,6 +10,16 @@
         "url": "https://www.coursera.org/professional-certificates/google-cybersecurity"
     },
     {
+        "name": "Assets, Threats, and Vulnerabilities",
+        "dates": "14 November 2024",
+        "role": "Google",
+        "description": "Successfully completed all course material in the Assets, Threats, and Vulnerabilities Course offered by Google on Coursera. Grade Achieved: 93.75%",
+        "skills": ["Authentication","Vulnerability assessment","Cryptography","asset classification","threat analysis"],
+        "logo": "/img/google.png",
+        "logoType": "black",
+        "url": "https://www.coursera.org/account/accomplishments/records/7K5H9VAZ5W9T"
+    },
+    {
         "name": "Tools of the Trade: Linux and SQL",
         "dates": "12 November 2024",
         "role": "Google",
