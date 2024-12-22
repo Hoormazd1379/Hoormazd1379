@@ -10,6 +10,16 @@
         "url": "https://www.coursera.org/professional-certificates/google-cybersecurity"
     },
     {
+        "name": "Detection and Response",
+        "dates": "22 December 2024",
+        "role": "Google",
+        "description": "Successfully completed all course material in the Detection and Response Course offered by Google on Coursera. Grade Achieved: 94.65%",
+        "skills": ["Security Information and Event Management (SIEM) tools","Packet Analyzer","Intrusion Detection Systems (IDS)"],
+        "logo": "/img/google.png",
+        "logoType": "black",
+        "url": "https://www.coursera.org/account/accomplishments/records/GB9MQSAVLR7G"
+    },
+    {
         "name": "Assets, Threats, and Vulnerabilities",
         "dates": "14 November 2024",
         "role": "Google",
