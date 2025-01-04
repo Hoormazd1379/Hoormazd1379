@@ -24,7 +24,7 @@ function generateRandomNumber() {
 let allianceFrequency = generateRandomNumber();
 
 // Array of whitelisted family names
-const whitelistedFamilies = ['Blueberry Outlaws MC'];
+const whitelistedFamilies = ['BlueberryOutlawsMC'];
 
 // Update the random number every 30 minutes (30 * 60 * 1000 milliseconds)
 setInterval(() => {
