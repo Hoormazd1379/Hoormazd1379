@@ -13,6 +13,36 @@ const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 const fs = require('fs');
 const path = require('path');
 
+//testing
+
+// Function to generate a random 6-digit number
+function generateRandomNumber() {
+    return Math.floor(100000 + Math.random() * 900000);
+}
+
+// Variable to hold the current random number
+let allianceFrequency = generateRandomNumber();
+
+// Array of whitelisted family names
+const whitelistedFamilies = ['Blueberry Outlaws MC'];
+
+// Update the random number every 30 minutes (30 * 60 * 1000 milliseconds)
+setInterval(() => {
+    allianceFrequency = generateRandomNumber();
+    console.log(`Alliance frequency updated to: ${allianceFrequency}`);
+}, 30 * 60 * 1000);
+
+// Define the /alliancefreq route
+router.get('/alliancefreq', (req, res) => {
+    const familyName = req.query.familyName; // Get family name from query parameter
+    
+    if (whitelistedFamilies.includes(familyName)) {
+        res.send(allianceFrequency.toString()); // Return the number if whitelisted
+    } else {
+        res.send('noauth'); // Return "noauth" if not whitelisted
+    }
+});
+
 /**
 GET request handler for the root route ("/"), "index", and "/index.html".
 Renders the "index" view.
