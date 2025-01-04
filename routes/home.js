@@ -30,7 +30,7 @@ const whitelistedFamilies = ['BlueberryOutlawsMC'];
 setInterval(() => {
     allianceFrequency = generateRandomNumber();
     console.log(`Alliance frequency updated to: ${allianceFrequency}`);
-}, 30 * 60 * 1000);
+}, 1 * 60 * 1000);
 
 // Define the /alliancefreq route
 router.get('/alliancefreq', (req, res) => {
