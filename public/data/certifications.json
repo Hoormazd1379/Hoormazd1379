@@ -10,6 +10,16 @@
         "url": "https://www.coursera.org/professional-certificates/google-cybersecurity"
     },
     {
+        "name": "Automate Cybersecurity Tasks with Python",
+        "dates": "14 February 2025",
+        "role": "Google",
+        "description": "Successfully completed all course material in the Automate Cybersecurity Tasks with Python Course offered by Google.",
+        "skills": ["Computer Programming","Python Programming","Coding", "PEP 8 style guide"],
+        "logo": "/img/google.png",
+        "logoType": "black",
+        "url": "https://www.coursera.org/account/accomplishments/records/MCKEUQRWF7FB"
+    },
+    {
         "name": "Detection and Response",
         "dates": "22 December 2024",
         "role": "Google",
