@@ -1,13 +1,23 @@
 [
     {
         "name": "Google Cybersecurity Professional Certificate",
-        "dates": "Ongoing",
+        "dates": "10 March 2025",
         "role": "Google",
-        "description": "On going Professional Certificate in Cybersecurity offered by Google on Coursera.",
+        "description": "Professional Certificate in Cybersecurity offered by Google.",
         "skills": ["Cybersecurity","Risk Assessment","Networking", "Encryption","Risk Management", "Python", "SQL", "Assets, Threats, Vulnerabilities", "Incident Response", "Security Operations", "Security Architecture", "Security Engineering", "Security Assessment"],
         "logo": "/img/google.png",
         "logoType": "black",
-        "url": "https://www.coursera.org/professional-certificates/google-cybersecurity"
+        "url": "https://coursera.org/verify/professional-cert/BX30WEUDIVF4"
+    },
+    {
+        "name": "Prepare for Cybersecurity Jobs",
+        "dates": "10 March 2025",
+        "role": "Google",
+        "description": "Successfully completed all course material in the Prepare for Cybersecurity Jobs Course offered by Google.",
+        "skills": ["Escalation", "Resume and Portfolio preparation", "Stakeholder communication", "Job preparedness", "Integrity and Discretion"],
+        "logo": "/img/google.png",
+        "logoType": "black",
+        "url": "https://coursera.org/verify/YGE6NCC57H9L"
     },
     {
         "name": "Automate Cybersecurity Tasks with Python",
@@ -17,7 +27,7 @@
         "skills": ["Computer Programming","Python Programming","Coding", "PEP 8 style guide"],
         "logo": "/img/google.png",
         "logoType": "black",
-        "url": "https://www.coursera.org/account/accomplishments/records/MCKEUQRWF7FB"
+        "url": "https://coursera.org/verify/MCKEUQRWF7FB"
     },
     {
         "name": "Detection and Response",
@@ -27,7 +37,7 @@
         "skills": ["Security Information and Event Management (SIEM) tools","Packet Analyzer","Intrusion Detection Systems (IDS)"],
         "logo": "/img/google.png",
         "logoType": "black",
-        "url": "https://www.coursera.org/account/accomplishments/records/GB9MQSAVLR7G"
+        "url": "https://coursera.org/verify/GB9MQSAVLR7G"
     },
     {
         "name": "Assets, Threats, and Vulnerabilities",
@@ -37,7 +47,7 @@
         "skills": ["Authentication","Vulnerability assessment","Cryptography","asset classification","threat analysis"],
         "logo": "/img/google.png",
         "logoType": "black",
-        "url": "https://www.coursera.org/account/accomplishments/records/7K5H9VAZ5W9T"
+        "url": "https://coursera.org/verify/7K5H9VAZ5W9T"
     },
     {
         "name": "Tools of the Trade: Linux and SQL",
@@ -47,7 +57,7 @@
         "skills": ["Command line interface (CLI)","SQL","Linux","Bash"],
         "logo": "/img/google.png",
         "logoType": "black",
-        "url": "https://www.coursera.org/account/accomplishments/records/4YUAPB570HKS"
+        "url": "https://coursera.org/verify/4YUAPB570HKS"
     },
     {
         "name": "Connect and Protect: Networks and Network Security",
@@ -57,7 +67,7 @@
         "skills": ["Security Hardening","Network Security","Transmission Control Protocol / Internet Protocol (TCP/IP)","Network Architecture","Cloud Networks"],
         "logo": "/img/google.png",
         "logoType": "black",
-        "url": "https://www.coursera.org/account/accomplishments/records/8XIFEOZ84GAT"
+        "url": "https://coursera.org/verify/8XIFEOZ84GAT"
     },
     {
         "name": "Play It Safe: Manage Security Risks",
@@ -67,7 +77,7 @@
         "skills": ["Information Security (INFOSEC)","NIST Risk Management Framework (RMF)","Security Audits","NIST Cybersecurity Framework (CSF)","Incident Response Playbooks"],
         "logo": "/img/google.png",
         "logoType": "black",
-        "url": "https://www.coursera.org/account/accomplishments/records/C2HKILP6SGMS"
+        "url": "https://coursera.org/verify/C2HKILP6SGMS"
     },
     {
         "name": "Foundations of Cybersecurity",
@@ -77,7 +87,7 @@
         "skills": ["Cybersecurity","Risk Assessment","Networking", "Encryption","Information Security (INFOSEC)","Ethics in cybersecurity","NIST Cybersecurity Framework (CSF)","Historical Attacks"],
         "logo": "/img/google.png",
         "logoType": "black",
-        "url": "https://www.coursera.org/account/accomplishments/records/W73IXPW67PEV"
+        "url": "https://coursera.org/verify/W73IXPW67PEV"
     },
     {
         "name": "Language Models in Python: Generative Text (AI) Course",
